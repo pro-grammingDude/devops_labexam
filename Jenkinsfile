@@ -10,7 +10,7 @@ pipeline {
         stage('Build') {
             steps{
                 git branch: 'main', credentialsId: '998721e2-78de-42da-9242-d693d56dcfd7', url: 'https://github.com/Akshit2812/demo_devops.git'
-                bat 'python demo_devops.py'
+                bat 'python demo.py'
             }
         }
         stage('Test'){
